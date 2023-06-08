@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        main {
+            width: 100%;
+            background: blue;
+            box-sizing: content-box;
+        }
+
+        div {
+            box-sizing: border-box;
+            background: red;
+            width: 50%;
+            height: 375px;
+            border: 10px solid black;
+            margin-bottom: 10px;
+            padding: 25px;
+            display: inline-block;
+            margin-right: -4px;
+            vertical-align: top;
+        }
+
+        span {
+            background: green;
+            height: 375px;
+            border: 2px solid yellow;
+            width: 25%;
+        }
+
+        p {
+            background: white;
+        }
+
+        .warning {
+            /* display:block; */
+            background: red;
+            width: 50%;
+            min-width: 300px;
+            padding: 20px;
+            margin: 10px auto;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <div>
+            <p>Lorem ipsum dolor sit amet <span>highlight text</span> consectetur, adipisicing elit. Voluptate, fuga.
+            </p>
+        </div>
+        <div>
+            <p>This is a paragraph with some <em class="warning">"emphasised"</em> text that I am going to style to fit
+                in with my design.</p>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </main>
+</body>
+
+</html>
